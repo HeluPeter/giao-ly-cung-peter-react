@@ -6,9 +6,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="bg-green-500 text-white p-8 rounded-xl shadow-lg text-2xl">
-      ✅ Tailwind test successful!
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
